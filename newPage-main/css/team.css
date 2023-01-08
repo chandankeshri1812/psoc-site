@@ -1,0 +1,53 @@
+.team{
+  background: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.team__container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+.gallery__container{
+  line-height:0;
+   -webkit-column-count:5; /* split it into 5 columns */
+   -webkit-column-gap:5px; /* give it a 5px gap between columns */
+   -moz-column-count:5;
+   -moz-column-gap:5px;
+   column-count:3;
+   column-gap:5px;
+   /* filter: grayscale(100%); */
+}
+.gallery__member-image {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:5px; /* to match column gap */
+   filter: grayscale(100%);
+}
+@media screen and (max-width: 1024px){
+  .gallery__container{
+    column-count: 2;
+    /* filter: grayscale(100%); */
+  }
+  .gallery__member-image {
+     width: 100% !important;
+     height: auto !important;
+     margin-bottom:5px; /* to match column gap */
+     filter: grayscale(100%);
+  }
+}
+@media screen and (max-width: 600px){
+  .gallery__container{
+    column-count: 1;
+    /* filter: grayscale(100%); */
+  }
+  .gallery__member-image {
+     width: 100% !important;
+     height: auto !important;
+     margin-bottom:5px; /* to match column gap */
+     filter: grayscale(100%);
+  }
+}
+.gallery__member-image:hover{
+  filter: none;
+  filter: drop-shadow();
+}

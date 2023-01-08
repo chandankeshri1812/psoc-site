@@ -1,0 +1,17 @@
+/* .report_container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 4rem;
+} */
+section{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 4rem;
+  padding: 6rem 10rem;
+  margin-top: 4rem;
+
+}
+
+footer{
+  margin-top: 5rem;
+}
